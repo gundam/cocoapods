@@ -12,9 +12,11 @@
 		1065FAD02112E68E00EDBA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1065FACE2112E68E00EDBA05 /* Main.storyboard */; };
 		1065FAD22112E69000EDBA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1065FAD12112E69000EDBA05 /* Assets.xcassets */; };
 		1065FAD52112E69000EDBA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1065FAD32112E69000EDBA05 /* LaunchScreen.storyboard */; };
+		F1890B6E8B31D9EED0498126 /* Pods_cocoapodsLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C008CDC24356E9B3C9AA58 /* Pods_cocoapodsLearn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		105F60D92112EBA500E89101 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1065FAC72112E68E00EDBA05 /* cocoapodsLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoapodsLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1065FACA2112E68E00EDBA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1065FACC2112E68E00EDBA05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		1065FAD12112E69000EDBA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1065FAD42112E69000EDBA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1065FAD62112E69000EDBA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E3AB640700F3B879E9AAAA /* Pods-cocoapodsLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodsLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cocoapodsLearn/Pods-cocoapodsLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		CB9D3E72353D02D55DA5ADC9 /* Pods-cocoapodsLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodsLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-cocoapodsLearn/Pods-cocoapodsLearn.release.xcconfig"; sourceTree = "<group>"; };
+		D7C008CDC24356E9B3C9AA58 /* Pods_cocoapodsLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoapodsLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1890B6E8B31D9EED0498126 /* Pods_cocoapodsLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				1065FAC92112E68E00EDBA05 /* cocoapodsLearn */,
 				1065FAC82112E68E00EDBA05 /* Products */,
+				3177158F9E2832D46A801CE5 /* Pods */,
+				C2B748F0E57B7C7E5078BF77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +72,24 @@
 			path = cocoapodsLearn;
 			sourceTree = "<group>";
 		};
+		3177158F9E2832D46A801CE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66E3AB640700F3B879E9AAAA /* Pods-cocoapodsLearn.debug.xcconfig */,
+				CB9D3E72353D02D55DA5ADC9 /* Pods-cocoapodsLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2B748F0E57B7C7E5078BF77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				105F60D92112EBA500E89101 /* PromiseKit.framework */,
+				D7C008CDC24356E9B3C9AA58 /* Pods_cocoapodsLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1065FAD92112E69000EDBA05 /* Build configuration list for PBXNativeTarget "cocoapodsLearn" */;
 			buildPhases = (
+				4D3C5E65EBA724D4A4109792 /* [CP] Check Pods Manifest.lock */,
 				1065FAC32112E68E00EDBA05 /* Sources */,
 				1065FAC42112E68E00EDBA05 /* Frameworks */,
 				1065FAC52112E68E00EDBA05 /* Resources */,
+				E2454A748F03B60707FA9253 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D3C5E65EBA724D4A4109792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoapodsLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2454A748F03B60707FA9253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cocoapodsLearn/Pods-cocoapodsLearn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cocoapodsLearn/Pods-cocoapodsLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1065FAC32112E68E00EDBA05 /* Sources */ = {
@@ -278,11 +345,13 @@
 		};
 		1065FADA2112E69000EDBA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E3AB640700F3B879E9AAAA /* Pods-cocoapodsLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM6EFCNX3B;
 				INFOPLIST_FILE = cocoapodsLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +365,13 @@
 		};
 		1065FADB2112E69000EDBA05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9D3E72353D02D55DA5ADC9 /* Pods-cocoapodsLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM6EFCNX3B;
 				INFOPLIST_FILE = cocoapodsLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
